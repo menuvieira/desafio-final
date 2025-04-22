@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Anormalidades</title>
+</head>
+<body>
+    <link rel="stylesheet" href="homeStyle.css">
+    
+
+        <form action="http://localhost:3000/send-email" method="POST">
+            
+            
+            <div class="svg-container"></div>
+            <div class="logo-container">
+                <img src="Tríadelogo.svg" alt="Logo Tríade">
+            </div>  
+                
+            
+                <h1>Bem vindo</h1>
+                           
+                <h1>Registro de Anormalidades</h1>
+                <h2>Olá, <span id="user-name"></span>!</h2>
+                <h2>Registre sua ocorrência</h2>
+                <div class="grid-container">
+                    <div class="Conteiner2">
+                        <label for="Qual é o seu turno?">Qual é o seu turno?</label><br>
+                        Manhã<input type="radio" name="turno" value="Manhã"><br>
+                        Tarde<input type="radio" name="turno" value="Tarde"><br>
+                        Noite<input type="radio" name="turno" value="Noite"><br>
+                    </div>
+                    <div class="Conteiner3">
+                        <label for="Qual unidade está localizado a ocorrência?">Qual unidade está localizado a ocorrência?</label>
+                        <select name ="unidade">
+                            <option value="Escola Técnica SENAI Araripina">Araripina</option>
+                            <option value="Escola Técnica SENAI Areias">Areias</option>
+                            <option value="Escola Técnica SENAI Belo Jardim">Belo Jardim</option>
+                            <option value="Escola Técnica SENAI Cabo de Santo Agostinho">Cabo de Santo Agostinho</option>
+                            <option value="Escola Técnica SENAI Caruaru">Caruaru</option>
+                            <option value="Escola Técnica SENAI Goiana">Goiana</option>
+                            <option value="Escola Técnica SENAI Ipojuca">Ipojuca</option>
+                            <option value="Escola Técnica SENAI Paulista">Paulista</option>
+                            <option value="Escola Técnica SENAI Petrolina">Petrolina</option>
+                            <option value="Escola Técnica SENAI Santo Amaro">Santo Amaro</option>        
+                        </select><br>
+                    </div>
+                    <div class="Conteiner4">
+                        <label for="Qual é o tipo de ocorrência?">Qual é o tipo de ocorrência?</label><br>
+                        <select name="tipo_ocorrencia">
+                            <option value="Falta de energia">Falta de energia</option>
+                            <option value="Falta de água">Falta de água</option>
+                            <option value="Problemas na internet">Problemas na internet</option>
+                            <option value="Problemas no ar condicionado">Problemas no ar condicionado</option>
+                            <option value="Problemas na iluminação">Problemas na iluminação</option>
+                            <option value="Problemas na limpeza">Problemas na limpeza</option>
+                            <option value="Problemas na segurança">Problemas na segurança</option>
+                            <option value="Problemas na manutenção">Problemas na manutenção</option>
+                            <option value="Problemas na infraestrutura">Problemas na infraestrutura</option>
+                            <option value="Problemas na acessibilidade">Problemas na acessibilidade</option>
+                            <option value="Problemas na sinalização">Problemas na sinalização</option>
+                            <option value="Problemas na comunicação">Problemas na comunicação</option>
+                        </select><br>
+                    </div> 
+                    <div class="Conteiner5">
+                        <label for="descricao">Descreva a ocorrência:</label><br>
+                        <textarea name="descricao" rows="4" cols="50" placeholder="Descreva a ocorrência aqui..."></textarea><br>
+                    </div>
+                    <div class="Conteiner6">
+                        <label for="data">Data da ocorrência:</label><br>
+                        <input type="date" id="data" name="data"><br>
+                    </div>
+                    <div class="Conteiner7">
+                        <label for="Quer anexar um arquivo?">Quer anexar um arquivo?:</label><br>
+                        <input type="file" name="anexo" accept="image/*, .pdf" id="file-upload"><br>
+                        <img id="uploaded-image" alt="Imagem carregada" style="display: none; max-width: 100%; border-radius: 10px; margin-top: 10px;">
+                    </div>
+                    <div class="Conteiner8">
+                        <label for="Grau de urgência">Grau de urgência</label>
+                        <input type="range" name="urgencia" min="1" max="5" value="3"><br>
+                    </div>
+                </div>
+ 
+                    <button type="submit">Registrar Ocorrência</button><br>
+                    <p class="politica">Política de Privacidade <a href="politica.html">Leia aqui</a></p>
+                    <p class="logout"><a href="index.html">Sair</a></p>
+            </div>
+                        
+                        
+                        
+                        
+        </form>
+            
+            
+            
+        <script src="script.js"></script>
+        <footer>
+            &copy; 2025 TríadeLTDA. Todos os direitos reservados.
+        </footer>
+</body>
+</html>

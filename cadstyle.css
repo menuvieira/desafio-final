@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+.svg-container img {
+    width: auto; /* Ajusta a largura automaticamente */
+    height: 100%; /* Faz o SVG ocupar toda a altura do contêiner */
+    max-width: 100%; /* Garante que o SVG não ultrapasse a largura do contêiner */
+    object-fit: contain; /* Garante que o SVG seja redimensionado proporcionalmente */
+    
+}
+.svg-container {
+    background-color: #303f8e;
+    position: relative;
+    width: 100%; /* O contêiner ocupará toda a largura disponível */
+    height: 100vh; /* Ajusta a altura para ocupar 100% da altura da tela */
+    display: flex; /* Centraliza o conteúdo dentro do contêiner */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse o contêiner */
+}   
+.nome {
+    position: absolute; /* Permite posicionar o elemento sobre o SVG */
+    top: 33%; /* Ajuste para posicionar verticalmente */
+    left: 24.5%; /* Ajuste para posicionar horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza o elemento */
+    color: #333; /* Cor do texto */
+    box-shadow: none;
+    background-color: #f8b237;
+     
+    
+}
+.endereco {
+    position: absolute; /* Permite posicionar o elemento sobre o SVG */
+    top: 33%; /* Ajuste para posicionar verticalmente */
+    left: 43.5%; /* Ajuste para posicionar horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza o elemento */
+    color: #333; /* Cor do texto */
+    box-shadow: none; /* Remove a sombra */
+    background-color: #f8b237;
+   
+}
+.telefone {
+    position: absolute; /* Permite posicionar o elemento sobre o SVG */
+    top: 49.5%; /* Ajuste para posicionar verticalmente */
+    left: 24.5%; /* Ajuste para posicionar horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza o elemento */
+    color: #333; /* Cor do texto */
+    box-shadow: none; /* Remove a sombra */
+    background-color: #fffbfb;
+
+}.EmailCadastro {
+    position: absolute; /* Permite posicionar o elemento sobre o SVG */
+    top: 49.5%; /* Ajuste para posicionar verticalmente */
+    left: 43.5%; /* Ajuste para posicionar horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza o elemento */
+    color: #333; /* Cor do texto */
+    box-shadow: none; /* Remove a sombra */
+    background-color: #fffbfb;
+}
+.SenhaCadastro {
+    position: absolute; /* Permite posicionar o elemento sobre o SVG */
+    top: 66%; /* Ajuste para posicionar verticalmente */
+    left: 24.5%; /* Ajuste para posicionar horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza o elemento */
+    color: #333; /* Cor do texto */
+    box-shadow: none; /* Remove a sombra */
+    background-color: #fffbfb;
+}
+.ConfirmarSenha{
+    position: absolute; /* Permite posicionar o elemento sobre o SVG */
+    top: 66%; /* Ajuste para posicionar verticalmente */
+    left: 43.5%; /* Ajuste para posicionar horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza o elemento */
+    color: #333; /* Cor do texto */
+    box-shadow: none; /* Remove a sombra */
+    background-color: #fffbfb;
+}
+.svg-container .btn {
+    position: absolute; /* Permite posicionar o botão dentro do contêiner */
+    bottom: 16%; /* Ajusta a posição vertical (10% acima da parte inferior) */
+    left: 47%; /* Centraliza horizontalmente */
+    transform: translate(-50%, 0); /* Centraliza o botão horizontalmente */
+    width: 177px; /* Define a largura do botão */
+    padding: 11px 32px; /* Ajusta o tamanho do botão */
+    background-color: #ff6a00; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Remove o contorno */
+    border-radius: 20px; /* Bordas arredondadas */
+    cursor: pointer; /* Mostra o cursor de clique */
+    font-size: 17px; /* Tamanho do texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para o botão */
+    
+}
+.svg-container .btn:hover {
+    background-color: #303f8e; /* Cor de fundo ao passar o mouse */
+}
+/* Estilo para o parágrafo "Registrar-se" */
+.svg-container .login {
+    position: absolute;
+    bottom: 10%; /* Ajusta a posição vertical */
+    top: 79%; /* Ajuste para posicionar verticalmente */
+    left: 23%; /* Centraliza horizontalmente */
+    transform: translate(-50%, 0); /* Centraliza o texto horizontalmente */
+    font-size: 14px; /* Tamanho da fonte */
+    color: #000000; /* Cor do texto */
+    background-color: #fffbfb;
+}
+
+.svg-container .login a {
+    color: #007BFF; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    background-color: #fffbfb;
+}
+
+.svg-container .login a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    background-color: #fffbfb;
+}
+
+/* Estilo para o parágrafo "Política de Privacidade" */
+.svg-container .politica {
+    position: absolute;
+    bottom: 5%; /* Ajusta a posição vertical */
+    top: 89%; /* Ajuste para posicionar verticalmente */
+    left: 24%; /* Centraliza horizontalmente */
+    transform: translate(-50%, 0); /* Centraliza o texto horizontalmente */
+    font-size: 12px; /* Tamanho da fonte */
+    color: #000000; /* Cor do texto */
+    background-color: #fffbfb;
+}
+
+.svg-container .politica a {
+    color: #FF6A00; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+     background-color: #fffbfb;
+}
+
+.svg-container .politica a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ff6a00;
+    color: white;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    background-color: #ffffff;    
+}
+
+
+.svg-container img {
+    width: auto; /* Ajusta a largura automaticamente */
+    height: 100%; /* Faz o SVG ocupar toda a altura do contêiner */
+    max-width: 100%; /* Garante que o SVG não ultrapasse a largura do contêiner */
+    object-fit: cover; /* Garante que o SVG seja redimensionado proporcionalmente */
+}
+.svg-container {
+    background-color: #303f8e;
+    position: relative;
+    width: 100%; /* O contêiner ocupará toda a largura disponível */
+    height: 100vh; /* Ajusta a altura para ocupar 100% da altura da tela */
+    display: flex; /* Centraliza o conteúdo dentro do contêiner */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse o contêiner */
+    
+}
+h1 {
+    position: absolute; /* Permite posicionar o elemento sobre o SVG */
+    top: 17%; /* Ajuste para posicionar verticalmente */
+    left: 36%; /* Ajuste para posicionar horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza o elemento */
+    color: #303f8e; /* Cor do texto */
+    box-shadow: none;
+    background-color: #ffffff;
+    font-size: 40px;
+    font-family:  asset;
+    
+}
+
+
+.textbox1 {
+    position: absolute; /* Permite posicionar o elemento sobre o SVG */
+    top: 36.80%; /* Ajuste para posicionar verticalmente */
+    left: 61.5%; /* Ajuste para posicionar horizontalmente */
+    background-color: transparent; /* Fundo totalmente transparente */
+    border: 1px solid #ccc; /* Adiciona uma borda para melhor visibilidade */
+    color: #333; /* Cor do texto */
+    padding: 15px 32px;
+    width: 329px; /* Define uma largura maior */
+    border-radius: 20px;
+    box-shadow: nome;
+}
+
+.textbox2 {
+    position: absolute; /* Permite posicionar o elemento sobre o SVG */
+    top: 52.54%; /* Ajuste para posicionar verticalmente */
+    left: 61.5%; /* Ajuste para posicionar horizontalmente */
+    background-color: transparent; /* Fundo totalmente transparente */
+    border: 1px solid #ccc; /* Adiciona uma borda para melhor visibilidade */
+    color: #333; /* Cor do texto */
+    padding: 15px 32px;
+    width: 329px; /* Define uma largura maior */
+    border-radius: 20px;
+    box-shadow: nome;
+}
+.textbox2::placeholder {
+    
+    color: #a61616; /* Define a cor do texto do placeholder como branco */
+    opacity: 0; /* Ajusta a opacidade do placeholder */
+}
+
+.textbox3 {
+    position: absolute; /* Permite posicionar o elemento sobre o SVG */
+    top: 68.4%; /* Ajuste para posicionar verticalmente */
+    left: 61.5%; /* Ajuste para posicionar horizontalmente */
+    background-color: transparent; /* Fundo totalmente transparente */
+    border: 1px solid #ccc; /* Adiciona uma borda para melhor visibilidade */
+    flood-color: #000000;
+    padding: 15px 32px;
+    width: 329px; /* Define uma largura maior */
+    border-radius: 20px;
+    box-shadow: nome;
+    
+    
+}
+
+.textbox3 :-ms-input-placeholder {
+    color: #ffffff; /* Define a cor do texto do placeholder como branco */
+    opacity: 1; /* Garante que o placeholder seja totalmente visível */
+}
+
+
+.svg-container .btn {
+    position: absolute; /* Permite posicionar o botão dentro do contêiner */
+    bottom: 12%; /* Ajusta a posição vertical (10% acima da parte inferior) */
+    left: 74%; /* Centraliza horizontalmente */
+    transform: translate(-50%, 0); /* Centraliza o botão horizontalmente */
+    width: 177px; /* Define a largura do botão */
+    padding: 11px 32px; /* Ajusta o tamanho do botão */
+    background-color: #ff6a00; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Remove o contorno */
+    border-radius: 20px; /* Bordas arredondadas */
+    cursor: pointer; /* Mostra o cursor de clique */
+    font-size: 17px; /* Tamanho do texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para o botão */
+}
+.svg-container .btn:hover {
+    background-color: #308e56; /* Cor de fundo ao passar o mouse */
+}
+/* Estilo para o parágrafo "Registrar-se" */
+.svg-container .registro {
+    position: absolute;
+    bottom: 10%; /* Ajusta a posição vertical */
+    top: 90%; /* Ajuste para posicionar verticalmente */
+    left: 71%; /* Centraliza horizontalmente */
+    transform: translate(-50%, 0); /* Centraliza o texto horizontalmente */
+    font-size: 14px; /* Tamanho da fonte */
+    color: #000000; /* Cor do texto */
+}
+
+.svg-container .registro a {
+    color: #007BFF; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    background-color: #303f8e;
+}
+
+.svg-container .registro a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    background-color: #303f8e;
+}
+
+/* Estilo para o parágrafo "Política de Privacidade" */
+.svg-container .politica {
+    position: absolute;
+    bottom: 5%; /* Ajusta a posição vertical */
+    top: 94%; /* Ajuste para posicionar verticalmente */
+    left: 70%; /* Centraliza horizontalmente */
+    transform: translate(-50%, 0); /* Centraliza o texto horizontalmente */
+    font-size: 12px; /* Tamanho da fonte */
+    color: #000000; /* Cor do texto */
+    background-color: #303f8e;
+}
+
+.svg-container .politica a {
+    color: #FF6A00; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    background-color: #303f8e;
+}
+
+.svg-container .politica a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    background-color: #303f8e;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ff6a00;
+    color: white;
+    font-size: 0.9rem;
+}

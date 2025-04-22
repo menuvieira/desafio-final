@@ -1,0 +1,143 @@
+/* Reset e base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #303f8e;
+    color: #333;
+}
+
+h1, h2 {
+    color: #000000; /* Cor de destaque para os títulos */
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Contêiner da logo */
+.logo-container {
+    display: row; /* Usa flexbox para centralizar a logo */
+    justify-content: row; /* Centraliza horizontalmente */
+    align-items: row; /* Centraliza verticalmente */
+    padding: 20px; /* Espaçamento ao redor da logo */
+    background-color: #ffffff; /* Fundo branco para destacar a logo */
+    
+}
+
+/* Estilo da logo */
+.logo-container img {
+    max-width: 200px; /* Define a largura máxima da logo */
+    height: auto; /* Mantém a proporção da imagem */
+    
+}
+
+form {
+    max-width: 1200px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Logo */
+.homepage-box img {
+    display: block;
+    margin: 20px auto;
+    max-width: 180px;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+}
+
+/* Card estilo */
+.grid-container > div {
+    background-color: #adefdb;
+    border: 1px solid #030303;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.grid-container > div:hover {
+    transform: translateY(-3px);
+}
+
+/* Campos de entrada */
+label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="radio"],
+input[type="date"],
+input[type="file"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 6px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Range */
+input[type="range"] {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Botão */
+button[type="submit"] {
+    background-color: #0052cc;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.5s;
+    align-self: center;
+}
+
+button[type="submit"]:hover {
+    background-color: #003d99;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ff6a00;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Links */
+a {
+    color: #0052cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Política e logout */
+.politica, .logout {
+    margin-top: 20px;
+    text-align: center;
+}
+
