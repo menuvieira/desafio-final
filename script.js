@@ -63,29 +63,3 @@ fileInput.addEventListener('change', (event) => {
     }
 });
 
-// Inicializa o EmailJS
-emailjs.init("SEU_PUBLIC_KEY"); // Substitua "SEU_PUBLIC_KEY" pela sua Public Key do EmailJS
-
-// Referência ao formulário
-const formulario = document.getElementById("formulario");
-
-// Adiciona o evento de envio ao formulário
-formulario.addEventListener("submit", (e) => {
-    e.preventDefault(); // Impede o envio padrão do formulário
-
-    // Obtém os dados do formulário
-    const formData = new FormData(formulario);
-    const formObject = Object.fromEntries(formData.entries()); // Converte para objeto
-
-    // Envia o e-mail usando EmailJS
-    emailjs
-        .send("service_7o94tuc", "SEU_TEMPLATE_ID", formObject)
-        .then(() => {
-            alert("Ocorrência registrada com sucesso! E-mail enviado.");
-            formulario.reset(); // Limpa o formulário
-        })
-        .catch((error) => {
-            console.error("Erro ao enviar o e-mail:", error);
-            alert("Ocorreu um erro ao registrar a ocorrência. Tente novamente.");
-        });
-});
