@@ -6,6 +6,7 @@
     font-size: 16px;
     background-color: #ffffff;
 }
+
 .svg-container img {
     width: auto; /* Ajusta a largura automaticamente */
     height: 100%; /* Faz o SVG ocupar toda a altura do contêiner */
@@ -13,6 +14,7 @@
     object-fit: contain; /* Garante que o SVG seja redimensionado proporcionalmente */
     
 }
+
 .svg-container {
     background-color: #303f8e;
     position: relative;
@@ -22,7 +24,37 @@
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
     overflow: hidden; /* Garante que o conteúdo não ultrapasse o contêiner */
-}   
+}  
+
+/* Estilo para os campos de entrada */
+.cadastro-box input[type="text"],
+.cadastro-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+}
+
+Estilo para o botão
+.cadastro-box .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #0052cc;
+    color: white;
+    border: none;
+    border-radius: 8px; /* Arredonda as bordas do botão */
+    cursor: pointer;
+    font-size: 1px;
+    
+}
+
+.cadastro-box .btn:hover {
+    background-color: #003d99;
+}
+
+
 .nome {
     position: absolute; /* Permite posicionar o elemento sobre o SVG */
     top: 33%; /* Ajuste para posicionar verticalmente */
@@ -31,9 +63,9 @@
     color: #333; /* Cor do texto */
     box-shadow: none;
     background-color: #f8b237;
-     
-    
+           
 }
+
 .endereco {
     position: absolute; /* Permite posicionar o elemento sobre o SVG */
     top: 33%; /* Ajuste para posicionar verticalmente */
@@ -44,8 +76,9 @@
     background-color: #f8b237;
    
 }
+
 .telefone {
-    position: absolute; /* Permite posicionar o elemento sobre o SVG */
+    position: absolute; /* Permite posicionar o elemento sobre o SVG */ 
     top: 49.5%; /* Ajuste para posicionar verticalmente */
     left: 24.5%; /* Ajuste para posicionar horizontalmente */
     transform: translate(-50%, -50%); /* Centraliza o elemento */
@@ -53,7 +86,9 @@
     box-shadow: none; /* Remove a sombra */
     background-color: #fffbfb;
 
-}.EmailCadastro {
+}
+
+.EmailCadastro {
     position: absolute; /* Permite posicionar o elemento sobre o SVG */
     top: 49.5%; /* Ajuste para posicionar verticalmente */
     left: 43.5%; /* Ajuste para posicionar horizontalmente */
@@ -62,6 +97,7 @@
     box-shadow: none; /* Remove a sombra */
     background-color: #fffbfb;
 }
+
 .SenhaCadastro {
     position: absolute; /* Permite posicionar o elemento sobre o SVG */
     top: 66%; /* Ajuste para posicionar verticalmente */
@@ -71,6 +107,7 @@
     box-shadow: none; /* Remove a sombra */
     background-color: #fffbfb;
 }
+
 .ConfirmarSenha{
     position: absolute; /* Permite posicionar o elemento sobre o SVG */
     top: 66%; /* Ajuste para posicionar verticalmente */
@@ -80,6 +117,7 @@
     box-shadow: none; /* Remove a sombra */
     background-color: #fffbfb;
 }
+
 .svg-container .btn {
     position: absolute; /* Permite posicionar o botão dentro do contêiner */
     bottom: 16%; /* Ajusta a posição vertical (10% acima da parte inferior) */
@@ -96,9 +134,11 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para o botão */
     
 }
+
 .svg-container .btn:hover {
     background-color: #303f8e; /* Cor de fundo ao passar o mouse */
 }
+
 /* Estilo para o parágrafo "Registrar-se" */
 .svg-container .login {
     position: absolute;

@@ -8,6 +8,86 @@
 }
 
 
+
+/* Garante que o body e o contêiner ocupem toda a altura da página */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    background-color: #ffffff;
+    height: 100%; /* Garante que o body ocupe toda a altura */
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ocupa toda a largura */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+Estilo dos campos de entrada
+.textbox1, .textbox2, .textbox3 {
+    margin-bottom: 5px;
+    margin-left: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.textbox1 input,
+.textbox2 input,
+.textbox3 input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilo do botão */
+.btn {
+    width: 100%;
+    max-width: 200px; /* Define um limite máximo */
+    padding: 10px;
+    background-color: #0052cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #003d99;
+}
+
+/* Estilo do QR Code */
+.qr-code {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 80px; /* Reduz o tamanho do QR Code */
+    height: auto;
+}
+
+.qr-code img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+
 .svg-container img {
     width: auto; /* Ajusta a largura automaticamente */
     height: 100%; /* Faz o SVG ocupar toda a altura do contêiner */
@@ -41,28 +121,26 @@ h1 {
 
 .textbox1 {
     position: absolute; /* Permite posicionar o elemento sobre o SVG */
-    top: 36.80%; /* Ajuste para posicionar verticalmente */
-    left: 61.5%; /* Ajuste para posicionar horizontalmente */
+    top: 35.7%; /* Ajuste para posicionar verticalmente */
+    left: 63.3%; /* Ajuste para posicionar horizontalmente */
     background-color: transparent; /* Fundo totalmente transparente */
-    border: 1px solid #ccc; /* Adiciona uma borda para melhor visibilidade */
     color: #333; /* Cor do texto */
     padding: 15px 32px;
     width: 329px; /* Define uma largura maior */
     border-radius: 20px;
-    box-shadow: nome;
+    box-shadow: none;
 }
 
 .textbox2 {
     position: absolute; /* Permite posicionar o elemento sobre o SVG */
-    top: 52.54%; /* Ajuste para posicionar verticalmente */
+    top: 51.2%; /* Ajuste para posicionar verticalmente */
     left: 61.5%; /* Ajuste para posicionar horizontalmente */
     background-color: transparent; /* Fundo totalmente transparente */
-    border: 1px solid #ccc; /* Adiciona uma borda para melhor visibilidade */
     color: #333; /* Cor do texto */
     padding: 15px 32px;
     width: 329px; /* Define uma largura maior */
     border-radius: 20px;
-    box-shadow: nome;
+    box-shadow: none;
 }
 .textbox2::placeholder {
     
@@ -72,15 +150,14 @@ h1 {
 
 .textbox3 {
     position: absolute; /* Permite posicionar o elemento sobre o SVG */
-    top: 68.4%; /* Ajuste para posicionar verticalmente */
+    top: 67%; /* Ajuste para posicionar verticalmente */
     left: 61.5%; /* Ajuste para posicionar horizontalmente */
     background-color: transparent; /* Fundo totalmente transparente */
-    border: 1px solid #ccc; /* Adiciona uma borda para melhor visibilidade */
     flood-color: #000000;
     padding: 15px 32px;
     width: 329px; /* Define uma largura maior */
     border-radius: 20px;
-    box-shadow: nome;
+    box-shadow: none;
     
     
 }
@@ -138,7 +215,7 @@ h1 {
     top: 94%; /* Ajuste para posicionar verticalmente */
     left: 70%; /* Centraliza horizontalmente */
     transform: translate(-50%, 0); /* Centraliza o texto horizontalmente */
-    font-size: 12px; /* Tamanho da fonte */
+    font-size: 13px; /* Tamanho da fonte */
     color: #000000; /* Cor do texto */
     background-color: #303f8e;
 }
@@ -154,6 +231,25 @@ h1 {
     background-color: #303f8e;
 }
 
+/* Centraliza os parágrafos abaixo do botão */
+.registro, .politica {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 10px; /* Adiciona espaço acima */
+    margin-left: 50px;
+    font-size: 14px; /* Ajusta o tamanho da fonte */
+    color: #333; /* Cor do texto */
+}
+
+Estilo para os links
+.registro a, .politica a {
+    color: #0052cc; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.registro a:hover, .politica a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
 footer {
     text-align: center;
     margin-top: 20px;
@@ -162,3 +258,4 @@ footer {
     color: white;
     font-size: 0.9rem;
 }
+
